@@ -1,0 +1,56 @@
+
+int led = D7; // Instead of writing D7 over and over again, we'll write led2
+// This one is the little blue LED on your board. On the Photon it is next to D7, and on the Core it is next to the USB jack.
+
+void setup() {
+
+  pinMode(led, OUTPUT);
+
+}
+
+
+void loop() {
+
+  digitalWrite(led,HIGH);
+  delay(500);
+  digitalWrite(led,LOW);
+  delay(100);
+  digitalWrite(led,HIGH);
+  delay(500);
+  digitalWrite(led,LOW);
+  delay(100);
+  digitalWrite(led,HIGH);
+  delay(500);
+  digitalWrite(led,LOW);
+  delay(100);
+  digitalWrite(led,HIGH);
+  delay(1000);
+  digitalWrite(led,LOW);
+  delay(100);
+  // Finish V MorseCode
+  
+  
+  digitalWrite(led,HIGH);
+  delay(500);
+  digitalWrite(led,LOW);
+  delay(100);
+  digitalWrite(led,HIGH);
+  delay(500);
+  digitalWrite(led,LOW);
+  delay(100);
+  //Finish I
+  
+  digitalWrite(led,HIGH);
+  delay(500);
+  digitalWrite(led,LOW);
+  delay(100);
+  //Finish E
+  
+  digitalWrite(led,HIGH);
+  delay(1000);
+  digitalWrite(led,LOW);
+  delay(100);
+  //finish T
+
+  // And repeat!
+}
